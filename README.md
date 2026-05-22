@@ -10,6 +10,26 @@ This system allows users to:
 
 ---
 
+# Screenshots
+
+## Main Application
+
+![Main App](screenshots/home.png)
+
+---
+
+## Multilingual Support
+
+![Telugu Demo](screenshots/telugu-demo.png)
+
+---
+
+## Contradiction Analysis
+
+![Contradiction Analysis](screenshots/contradiction.png)
+
+---
+
 # Features
 
 ## Semantic Retrieval
@@ -52,19 +72,21 @@ This system allows users to:
 
 # Project Architecture
 
+```text
 User Query
-↓
+    ↓
 Streamlit UI
-↓
+    ↓
 FastAPI Backend
-↓
+    ↓
 Translation Layer
-↓
+    ↓
 Semantic Search (FAISS)
-↓
+    ↓
 LLM Reasoning
-↓
+    ↓
 Grounded Response + Citations
+```
 
 ---
 
@@ -83,6 +105,11 @@ app/
     vector_store.py
 
 data/pdfs/
+
+screenshots/
+    home.png
+    telugu-demo.png
+    contradiction.png
 
 ui/
     app.py
@@ -190,6 +217,7 @@ http://localhost:8501
 - multilingual translation integration
 - API integration debugging
 - Swagger/OpenAPI compatibility issues
+- GitHub large file handling
 
 ---
 
@@ -219,5 +247,5 @@ http://localhost:8501
 
 # Author
 
-Lalitha
+Lalitha  
 MSc Data Science
